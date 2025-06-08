@@ -6,7 +6,7 @@ export interface MeetingRoom {
 
 export interface Reservation {
   id: number;
-  from_reserve: string;
+  from_reserve: string; // формат ISO
   to_reserve: string;
   meetingroom_id: number;
   user_id: number;

@@ -5,12 +5,13 @@ import RoomDetails from './pages/RoomDetails';
 import MyReservations from './pages/MyReservations';
 import Login from './pages/Login';
 import { ProtectedRoute } from './context/AuthContext';
+import './index.css';
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Login />} />
+        <Route path="/" element={<Home />} />
         <Route
           path="/rooms"
           element={

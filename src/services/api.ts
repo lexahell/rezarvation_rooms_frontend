@@ -8,7 +8,6 @@ const apiClient = axios.create({
   },
 });
 
-// Добавляем интерсептор для добавления токена к каждому запросу
 apiClient.interceptors.request.use(
   (config) => {
     const token = localStorage.getItem('token');
@@ -57,3 +56,4 @@ export const getMyReservations = async (): Promise<Reservation[]> => {
   const response = await apiClient.get('/reservations/my_reservations');
   return response.data;
 };
+
